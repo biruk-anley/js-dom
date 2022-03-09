@@ -175,4 +175,42 @@ function whole(){
 
 }
 
+// js DOM Nodes lets add elements
+
+function last(){
+const our = document.createElement("h3") // first lets create a tag we want to add
+
+const ours =  document.createTextNode ("here is what I want to add") // lets create text we want to add
+
+our.appendChild(ours) // appendt the text to the tag name
+
+const element = document.getElementById("parent") // append the paragraph to the elelment
+element.appendChild(our)
+
+}
+
+// lets add before element
+
+function first(){
+    const our2 = document.createElement("h3") // first lets create a tag we want to add
+
+    const ours2 =  document.createTextNode ("here is what I want to add") // lets create text we want to add
+
+    our2.appendChild(ours2) // appendt the text to the tag name
+
+const element = document.getElementById("parent") // append the paragraph to the elelment
+const chlildoneo = document.getElementById("first")
+element.insertBefore(our2,chlildoneo)
+
+
+}
+
+// lets use remove method
+
+function remove(){
+    document.getElementById("second").remove()
+}
+
+
+
 
