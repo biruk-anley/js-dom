@@ -127,3 +127,52 @@ function down(){
 }
 
 // lets deal with event listener
+
+const hold =  document.getElementById("buttons")
+
+hold.addEventListener("click" , function1)
+hold.addEventListener("mouseover", function2)
+hold.addEventListener("mouseout", function3)
+ 
+// click event
+
+function function1(){
+    document.getElementById("listen").innerHTML += "clicked <br>"  // here += makes not to over ride
+}
+
+// hover event
+
+
+function function2(){
+    document.getElementById("listen").innerHTML += "hoverd <br>" // here += makes not to over ride
+}
+
+// mouse out evnet
+
+function function3(){
+    document.getElementById("listen").innerHTML += "out <br>" // here += makes not to over ride
+}
+
+// js event couneter project
+
+let z = 0
+const xr = document.getElementById("buttonss")
+xr.addEventListener("click", counterss)
+
+function counterss(){
+    
+    z+=1
+    document.getElementById("listens").innerHTML = z
+    
+}
+
+// js repeat your workder project
+
+
+function whole(){
+    
+    document.getElementById("whole").innerHTML += document.body.innerHTML
+
+}
+
+
