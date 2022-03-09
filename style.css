@@ -1,0 +1,18 @@
+.domelements{
+    background-color:blue;
+}
+
+
+.domqueryselector{
+    background-color: aqua;
+    border: 5px solid green ;
+    width: fit-content;
+    padding: 10px;
+}
+
+.events{
+    background-color: aqua;
+    border: 5px solid rgb(128, 41, 0) ;
+    width: fit-content;
+    padding: 10px;
+}

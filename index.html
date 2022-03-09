@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--js how to use documetn.-->
+    <div class="dom">
+        <h1 >js dom</h1>
+        <a href="https"></a>
+        <a href="you"></a>
+        <button onclick="dom()">dom to check js</button>
+        <p id="dom">dom</p>
+        <p id="dom2">dom</p>
+        
+    </div>
+
+    <!--js elemetns eg document.get element by id, tag,,,,-->
+    <div class="domelements">
+        <button onclick="demoelements()">js dom elements</button>
+        <h2>Here is Dom Elements</h2>
+        <p id="ids">demo1</p>
+        <p id="demo2">demo2</p>
+        <p id="demo3">demo3</p>
+
+
+       
+    </div>
+
+   <!--js query selelctor and finding by class name diffrence-->
+
+   <p class="headers">headers for  class name selctores<p> <!-- here we can access paragrah by class name called headers-->
+
+    <div class="domqueryselector">
+        <button onclick="query()">classselectors</button>
+        <h5 class="headers">headers for query selelctore</h5>   <!--if we use query selector only h5.headers....headers with h5 will be printed header with paragraph not included -->
+        <h5 class="headers">new headers</h5>
+
+        <p id="classnamee">demo for showing div by class name</p>
+        <p id="queryselctors">demo for showing div by query selectoers</p>
+
+
+    </div>
+
+    <!--lets deal with the third one changing the value of attritbute-->
+    <div class="srcses">
+        <button onclick="imagechanger()">click to change the image</button> <br>
+         <img src="casey-horner-0D8_tYHIy0o-unsplash.jpg" alt="nothing" id="images" style="width: 50%;">
+
+    </div>
+    
+<!--input validation-->
+    <div class="value">
+        <label for="next">enter number between 10 and 20 <br></label>
+        <input id="next" required>
+        <button onclick="validate()">Submit</button>
+        <p id="validates"></p>
+
+        <form >
+            <h3>with requiered in html tag only</h3>
+            <input type="text" name="fname" required>
+            <input type="submit" value="Submit">
+          </form>
+
+    </div>
+
+    <!--dom with css-->
+
+    <div class="csss" id="holder">
+        <button onclick="clickabel()">clickable</button>
+        <p>RED</p>
+        <p>Green</p>
+        <P>blue</P>
+
+    </div>
+
+    <!--js events-->
+    <div class="events">
+        
+        <h1 onclick="seee(this)" id="seee">see the change</h1> <!--this can be donne like : h1 onclik = this.innerHtml="hello man" -->
+        <button onclick="display()">the time is</button>
+        <p id="dates"></p>
+
+        <!-- js on change-->
+        <form action="" >
+            <label for="value" style = "margin-right: 20px;">Enter your name and it will be converted to capital</label>
+            <input type="text" name="" id="value" onchange="upper()">
+
+        </form>
+    </div>
+
+
+
+    <script src="styel.js"></script>
+    
+
+</body>
+</html>

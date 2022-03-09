@@ -1,0 +1,106 @@
+function dom(){
+
+    // using doc you can find head, images, body , base Url, last modified ,  scripts and titles...those are methods
+
+
+    document.getElementById("dom").innerHTML = document.lastModified
+    document.getElementById("dom2").innerHTML = document.title
+
+}
+
+function demoelements(){
+
+    // lets see how to acess them by id 
+
+    document.getElementById("ids").innerHTML= "hello man"
+      
+    // lets see how to acces by tag name
+
+    const store = document.getElementsByTagName("p") // find all paragraphe elements and store all elements in array form
+
+    document.getElementById("demo2").innerHTML = store[1].innerHTML + " " + store[3].innerHTML // this one will access those stored files and acces by inner html
+
+
+    
+
+
+
+}
+
+// Finding HTML Elements by CSS Selectors
+
+function query(){
+const store2=document.getElementsByClassName("headers")
+const store3 =document.querySelectorAll("h5.headers")
+
+// lets access the first element by class name
+
+document.getElementById("classnamee").innerHTML = store2[0].innerHTML // heaers for teh class name will be displayed
+
+// lets acess all heading 5 with class name called headers with query selctors
+
+document.getElementById("queryselctors").innerHTML =  store3[1].innerHTML  // header for query selector will be printed out
+    
+
+}
+
+// js project to show continues gallery
+
+function imagechanger(){
+
+    const arrays = ["two.jpg", "kkk.jpg", "fragmaetoc.jpg", "kkkk.jpg"]
+
+    let text = "joker"
+     for (let i of arrays)
+
+
+    document.getElementById("images").src= "one.jpg"
+}
+
+// here is to check validation
+
+function validate(){
+    let x = document.getElementById("next").value
+    let text
+   if (isNaN(x)){
+       text = "Texts are not allowed here"
+       
+   }
+   else if (x<10 || x > 20){
+       text = "enter with the limit"
+   }
+   else{
+       text = alert("submited")
+   }
+
+   document.getElementById("validates").innerHTML = text
+}
+
+// here is to change style of css
+
+function clickabel(){
+    document.getElementById("holder").style.color= "red";
+
+}
+
+// lets see how event interact witeh the websites
+
+function seee(id){
+   id.innerHTML = "hello the changer" ; // this is done withe event handler
+}
+  // How to see the date
+
+
+function display(){
+    document.getElementById("dates").innerHTML  = Date()
+}
+
+// how to use onchange event
+
+function upper(){
+    const x = document.getElementById("value")
+
+    x.value = x.value.toUpperCase()
+
+
+}
