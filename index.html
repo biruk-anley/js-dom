@@ -81,8 +81,9 @@
 
     <!--js events-->
     <div class="events">
+        <h1>here is js events</h1>
         
-        <h1 onclick="seee(this)" id="seee">see the change</h1> <!--this can be donne like : h1 onclik = this.innerHtml="hello man" -->
+        <h2 onclick="seee(this)" id="seee">see the change</h2> <!--this can be donne like : h1 onclik = this.innerHtml="hello man" -->
         <button onclick="display()">the time is</button>
         <p id="dates"></p>
 
@@ -92,6 +93,16 @@
             <input type="text" name="" id="value" onchange="upper()">
 
         </form>
+        
+    </div>
+
+    <div class="mouse">
+        <h2>on mouse over and on mouse down projects</h2>
+        <div class="holders">
+            <p id="hover" onmouseover="over()" onmouseout="out()" onmousedown="down()" class="para">for mouse over and out</p>
+            <p id="hovers"  onmousedown="down()" onmouseup="up()" class="para">for mouse down and up</p>
+
+        </div>
     </div>
 
 

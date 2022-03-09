@@ -104,3 +104,26 @@ function upper(){
 
 
 }
+
+// lets see mouse related issue
+
+function over(){
+    document.getElementById("hover").innerHTML = "YOu hover isn't it"
+}
+
+function out(){
+    document.getElementById("hover").innerHTML = "hoverme"
+}
+
+
+function up(){
+    document.getElementById("hovers").innerHTML = "press me please"
+}
+
+
+
+function down(){
+    document.getElementById("hovers").innerHTML = "YOu pressed me"
+}
+
+// lets deal with event listener
