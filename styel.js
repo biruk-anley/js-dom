@@ -160,6 +160,7 @@ const xr = document.getElementById("buttonss")
 xr.addEventListener("click", counterss)
 
 function counterss(){
+    let nule;
     
     ze+=1
     document.getElementById("listens").innerHTML = ze
