@@ -155,14 +155,14 @@ function function3(){
 
 // js event couneter project
 
-let z = 0
+let ze = 0
 const xr = document.getElementById("buttonss")
 xr.addEventListener("click", counterss)
 
 function counterss(){
     
-    z+=1
-    document.getElementById("listens").innerHTML = z
+    ze+=1
+    document.getElementById("listens").innerHTML = ze
     
 }
 
